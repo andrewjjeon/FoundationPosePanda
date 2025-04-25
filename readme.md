@@ -19,9 +19,11 @@ Achieved following competitive errors on robot hand pose estimation
 
 
 FoundationPose Robot Instance
+
 <img src="assets/FposePanda100.gif" width="50%">
 
 FoundationPose Object Instance using ketchup from HOPE Dataset: [[HOPE]](https://github.com/swtyree/hope-dataset)
+
 <img src="assets/fp_ketchup.gif" width="50%">
 
 
@@ -62,6 +64,15 @@ First, try running on the given demo data from the original team (mustard bottle
 python run_demo.py
 ```
 
+# Synthetic Data Generation
+
+<div>
+  <img src="/images/7.png" alt="robotgt" style="max-width: 25%; height: auto;">
+  <img src="/images/7m.png" alt="handgt" style="max-width: 25%; height: auto;">
+  <img src="/images/7d.png" alt="handgt" style="max-width: 25%; height: auto;">
+  <img src="/images/7gt.png" alt="handgt" style="max-width: 25%; height: auto;">
+</div>
+
 Next, go to /demo_data and run...
 
 if you want to render a whole robot urdf inside pybullet and get images and annotations for that:
@@ -80,7 +91,9 @@ Now, run FoundationPose again, after you change the data paths to our synth dire
 python run_demo.py
 ```
 
-Finally, Take the predicted pose matrix and put it into evaluation.py to get translation and rotation error for foundationpose vs ground truth!
+# Evaluation
+
+Finally, Take the predicted pose matrix from FoundationPose and put it into evaluation.py to get translation and rotation error for foundationpose vs ground truth!
 ```
 python evaluation.py
 ```
