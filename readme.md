@@ -67,10 +67,10 @@ python run_demo.py
 # Synthetic Data Generation
 
 <div>
-  <img src="/images/7.png" alt="robotgt" style="max-width: 25%; height: auto;">
-  <img src="/images/7m.png" alt="handgt" style="max-width: 25%; height: auto;">
-  <img src="/images/7d.png" alt="handgt" style="max-width: 25%; height: auto;">
-  <img src="/images/7gt.png" alt="handgt" style="max-width: 25%; height: auto;">
+  <img src="/assets/7.png" alt="robotgt" style="max-width: 25%; height: auto;">
+  <img src="/assets/7m.png" alt="handgt" style="max-width: 25%; height: auto;">
+  <img src="/assets/7d.png" alt="handgt" style="max-width: 25%; height: auto;">
+  <img src="/assets/7gt.png" alt="handgt" style="max-width: 25%; height: auto;">
 </div>
 
 Next, go to /demo_data and run...
