@@ -77,12 +77,12 @@ python run_demo.py
 
 Next, go to /demo_data and run...
 
-if you want to render a whole robot urdf inside pybullet and get images and annotations for that:
+if you want to render a whole robot urdf inside pybullet and get images(rgb, mask, depth) and annotations for that:
 ```
 python urdf_render.py
 ```
 
-if you want to render just one link of a robot or a mesh (.obj) and get images and annotations for that:
+if you want to render just one link of a robot or a mesh (.obj) and get images(rgb, mask, depth)  and annotations for that:
 ```
 python obj_render.py
 ```
