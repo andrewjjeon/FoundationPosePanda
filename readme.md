@@ -106,3 +106,4 @@ Bonus: If you want to try different robot configurations (link0+link1 only, link
 python urdf2obj.py
 ```
 
+<img src="assets/error.png" width="30%">
