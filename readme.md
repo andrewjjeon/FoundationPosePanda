@@ -21,7 +21,7 @@ Achieved following competitive errors on robot hand pose estimation
 FoundationPose Robot Instance
 <img src="assets/FposePanda100.gif" width="50%">
 
-FoundationPose Object Instance
+FoundationPose Object Instance using ketchup from HOPE Dataset: [[HOPE]](https://github.com/swtyree/hope-dataset)
 <img src="assets/fp_ketchup.gif" width="50%">
 
 
