@@ -67,10 +67,10 @@ python run_demo.py
 # Synthetic Data Generation
 
 <div style="text-align: center;">
-  <img src="/assets/7.png" alt="robotgt" style="max-width: 24%; height: auto; display: inline-block;">
-  <img src="/assets/7m.png" alt="handgt" style="max-width: 24%; height: auto; display: inline-block;">
-  <img src="/assets/7d.png" alt="handgt" style="max-width: 24%; height: auto; display: inline-block;">
-  <img src="/assets/7gt.png" alt="handgt" style="max-width: 24%; height: auto; display: inline-block;">
+  <img src="/assets/7.png" alt="robotgt" style="max-width: 15%; height: auto; display: inline-block;">
+  <img src="/assets/7m.png" alt="handgt" style="max-width: 15%; height: auto; display: inline-block;">
+  <img src="/assets/7d.png" alt="handgt" style="max-width: 15%; height: auto; display: inline-block;">
+  <img src="/assets/7gt.png" alt="handgt" style="max-width: 15%; height: auto; display: inline-block;">
 </div>
 
 
