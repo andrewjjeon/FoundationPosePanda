@@ -42,32 +42,30 @@ pip install pybullet
 ```
 
 
-Next, go to /demo_data and run...
+First, go to /demo_data and run this script to render a whole robot urdf inside pybullet and generates synthetic images(rgb, mask, depth), camera intrinsics and ground truth pose annotations. The pose annotations will be generated as ./synth/hand2cam_poses.npy.
+```
+python urdf_render.py
+```
 
-Render a whole robot urdf inside pybullet and generate synthetic images(rgb, mask, depth) and annotations:
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/images/fpose/7.png" alt="RGB" style="width: 22%;">
   <img src="/images/fpose/7m.png" alt="Mask" style="width: 22%;">
   <img src="/images/fpose/7d.png" alt="Depth" style="width: 22%;">
   <img src="/images/fpose/7gt.png" alt="GT Pose" style="width: 22%;">
 </div>
-```
-python urdf_render.py
-```
 
-Along with the synthetic data, urdf_render.py will also generate ground truth pose annotations in hand2cam_poses.npy inside your synth directory.
-Now, run FoundationPose again, after you change the data paths in run_demo.py to our synth directory.
+
+Next, run FoundationPose to generate robot pose estimates, make sure you change the data paths in run_demo.py to our synth directory which contains all of our synthetic data we just generated.
 ```
 python run_demo.py
 ```
 
-Finally, Take the predicted pose matrix from FoundationPose and put it into evaluation.py which will evaluate against the ground truth pose annotations we generated above to get translation and rotation error for foundationpose vs ground truth!
+Finally, Take the predicted pose matrix from FoundationPose and put it into evaluation.py which will evaluate against the ground truth pose annotations we generated above to get translation and rotation error for foundationpose's estimate vs ground truth.
+```
+python evaluation.py
+```
 
 <img src="/images/fpose/FposePanda100.gif" alt="Franka Panda Demo"><br>
 
 Rotation Error: <strong>0.674°</strong><br>
 Translation Error: <strong>0.655 mm</strong>
-
-```
-python evaluation.py
-```
