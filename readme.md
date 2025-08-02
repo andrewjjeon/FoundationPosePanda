@@ -1,4 +1,5 @@
 # Evaluating Foundation Model Robot Pose Estimation with Synthetic Data Generation
+Please see my project page for a full description of what exactly I did: https://andrewjjeon.github.io/projects/fposepanda/
 
 ## FoundationPose Setup
 
@@ -31,9 +32,7 @@ First, try running on the given demo data from the original team (mustard bottle
 python run_demo.py
 ```
 
-
-
-
+<br>
 
 ## Synthetic Data Generation and Evaluation Setup
 
