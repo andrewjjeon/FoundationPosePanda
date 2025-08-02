@@ -34,7 +34,7 @@ python run_demo.py
 
 <br>
 
-## Synthetic Data Generation and Evaluation Setup
+## Synthetic Data Generation and Evaluation (What I did)
 
 Inside the FoundationPose Docker Container, install Pybullet via pip or another module to run my code to generate synthetic robot data. You can switch out the (.urdf) and (.obj) files with other robots, and this code should work with minimal tuning.
 ```
@@ -55,11 +55,7 @@ Now, run FoundationPose again, after you change the data paths in run_demo.py to
 python run_demo.py
 ```
 
-## Evaluation
-
 Finally, Take the predicted pose matrix from FoundationPose and put it into evaluation.py which will evaluate against the ground truth pose annotations we generated above to get translation and rotation error for foundationpose vs ground truth!
 ```
 python evaluation.py
 ```
-
-
