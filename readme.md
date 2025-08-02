@@ -3,12 +3,12 @@ Please see my project page for a full description of what exactly I did: https:/
 
 ## FoundationPose Setup
 
-### Download Model Weights and Demo Data
+Download Model Weights and Demo Data
 1) Download all network weights from [here](https://drive.google.com/drive/folders/1DFezOAD0oD1BblsXVxqDsl8fj0qzB82i?usp=sharing) and put them under the folder `weights/`. For the refiner, you will need `2023-10-28-18-33-37`. For scorer, you will need `2024-01-11-20-02-45`.
 
 1) If you want to run FoundationPose on some of the original demo data from the Nvidia team: [Download demo data](https://drive.google.com/drive/folders/1pRyFmxYXmAnpku7nGRioZaKrVJtIsroP?usp=sharing) and extract them under the folder `demo_data/`. 
 
-### Environment Setup: Docker
+Environment Setup: Docker
   ```
   cd docker/
   docker pull wenbowen123/foundationpose && docker tag wenbowen123/foundationpose foundationpose  # Or to build from scratch: docker build --network host -t foundationpose .
@@ -24,7 +24,7 @@ Later you can execute into the container without re-build.
 docker exec -it foundationpose bash
 ```
 
-### Demo
+Demo
 
 First, try running on the given demo data from the original team (mustard bottle and driller) to learn how to run FoundationPose.
 
@@ -55,7 +55,7 @@ Now, run FoundationPose again, after you change the data paths in run_demo.py to
 python run_demo.py
 ```
 
-### Evaluation
+## Evaluation
 
 Finally, Take the predicted pose matrix from FoundationPose and put it into evaluation.py which will evaluate against the ground truth pose annotations we generated above to get translation and rotation error for foundationpose vs ground truth!
 ```
