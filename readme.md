@@ -44,7 +44,7 @@ python run_demo.py
 
   <div class="card">
   </div>
-  
+
   <div class="card">
     <h1>Evaluating Foundation Model Robot Pose Estimation with Synthetic Data Generation</h1>
     <h2>1. Introduction</h2>
@@ -68,7 +68,7 @@ python run_demo.py
         <li>Prompted ChatGPT --> describe possible appearance of object</li>
         <li>Prompted Diffusion Model --> texture synthesis</li>
       </ul>
-
+      
       2.3 Pose Hypothesis Generation - Make pose guesses and refine them. <br>
       2.3.1 Pose Initialization
         <ul>
@@ -104,16 +104,13 @@ python run_demo.py
         <li>Camera Intrinsics Matrix</li>
       </ul>
   
-    <p>
+  
     In addition, for evaluation purposes we also need:
-    </p>
     <ul>
       <li>Camera Frame Pose Annotations (Ground Truth)</li>
     </ul>
 
-    <p>
-      I generated this data inside Pybullet by setting up the robot and a virtual camera inside Pybullet. I defined the virtual camera through a view matrix and a projection amtrix. The view matrix defines the world coordinates to camera coordinates transform while the projection matrix defines the 3D camera coordinates to 2D image coordinates transform. I then took photos of the robot rotating around a sphere. Next, I calculated the grouth truth robot pose annotations by getting the world frame pose, and using the view matrix to transform to camera frame pose. I also used the projection matrix to transform to image coordinates in order to actually visualize the ground truth pose annotations on our image data.
-    </p>
+    I generated this data inside Pybullet by setting up the robot and a virtual camera inside Pybullet. I defined the virtual camera through a view matrix and a projection amtrix. The view matrix defines the world coordinates to camera coordinates transform while the projection matrix defines the 3D camera coordinates to 2D image coordinates transform. I then took photos of the robot rotating around a sphere. Next, I calculated the grouth truth robot pose annotations by getting the world frame pose, and using the view matrix to transform to camera frame pose. I also used the projection matrix to transform to image coordinates in order to actually visualize the ground truth pose annotations on our image data.
 
     <ol>
       <li>Rendering a Robot inside of Pybullet:<br>
