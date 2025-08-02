@@ -44,7 +44,13 @@ pip install pybullet
 
 Next, go to /demo_data and run...
 
-If you want to render a whole robot urdf inside pybullet and get images(rgb, mask, depth) and annotations for that:
+Render a whole robot urdf inside pybullet and generate synthetic images(rgb, mask, depth) and annotations:
+<div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+  <img src="/images/fpose/7.png" alt="RGB" style="width: 22%;">
+  <img src="/images/fpose/7m.png" alt="Mask" style="width: 22%;">
+  <img src="/images/fpose/7d.png" alt="Depth" style="width: 22%;">
+  <img src="/images/fpose/7gt.png" alt="GT Pose" style="width: 22%;">
+</div>
 ```
 python urdf_render.py
 ```
@@ -56,6 +62,12 @@ python run_demo.py
 ```
 
 Finally, Take the predicted pose matrix from FoundationPose and put it into evaluation.py which will evaluate against the ground truth pose annotations we generated above to get translation and rotation error for foundationpose vs ground truth!
+
+<img src="/images/fpose/FposePanda100.gif" alt="Franka Panda Demo"><br>
+
+Rotation Error: <strong>0.674°</strong><br>
+Translation Error: <strong>0.655 mm</strong>
+
 ```
 python evaluation.py
 ```
