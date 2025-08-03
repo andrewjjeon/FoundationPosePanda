@@ -46,7 +46,7 @@ First, go to /demo_data and run this script to render a whole robot urdf inside 
 ```
 python urdf_render.py
 ```
-
+<img src="/images/fpose/synthetic_data_generation.png" alt="Synthetic Data Generation Pipeline"><br>
 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
   <img src="/images/fpose/7.png" alt="RGB" style="width: 22%;">
   <img src="/images/fpose/7m.png" alt="Mask" style="width: 22%;">
