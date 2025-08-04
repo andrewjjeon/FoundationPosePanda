@@ -34,7 +34,7 @@ python run_demo.py
 
 <br>
 
-## Synthetic Data Generation and Evaluation (What I did)
+## Synthetic Data Generation and Foundation Model Pose Estimation Evaluation
 
 Inside the FoundationPose Docker Container, install Pybullet via pip or another module to run my code to generate synthetic robot data. You can switch out the (.urdf) and (.obj) files with other robots, and this code should work with minimal tuning.
 ```
